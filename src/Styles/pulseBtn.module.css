@@ -1,0 +1,28 @@
+
+  .pulse {
+    width: 270px;
+    height: 90px;
+    margin-top: 10px;
+    border-radius: 40px;
+    background-color: rgb(233, 131, 148);
+    border: 1px solid rgb(233, 131, 148);
+    margin-left: 560px;
+   
+    display: block;
+    
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(59, 25, 207, 0.4);
+    animation: pulse 2s infinite;
+  }
+  .pulse:hover {
+    animation: none;
+    background-color: rgb(36, 187, 162);
+  }
+  
+
+  @keyframes pulse {
+   
+    0% { transform: scale(0.9); background-color:  rgba(231, 171, 243, 0.925); }
+    50% { transform: scale(1); background-color: rgba(185, 82, 177, 0.863);}
+    100% { transform: scale(0.9);background-color: rgba(230, 112, 200, 0.932); }
+  }

@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(./Assets/Piedra/Piedra-Regular.ttf) format('woff');
+}
+@font-face{
+  font-family: 'navFont';
+  src: local('navFont'),url(./Assets/Nerko_One/NerkoOne-Regular.ttf)format('woff');
+}
+@font-face{
+  font-family: 'navNameCompany';
+  src: local('navFont'),url(./Assets/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf)format('woff');
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.slider{
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+
+}
+
+#headerNavBox{
+  width: 100%;
+  height: 90px;
+  
+ 
+  
+}
+.secondLogoimg img{
+  width: 70px;
+  height: 70px;
+  margin-left: 640px;
+  margin-top: 50px;
+}
+
+
+
+.headerFixed{
+  box-sizing: border-box;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  background-color: rgb(223, 178, 247);
+  z-index: 1000;
+  
+}
+
+
+
+.sliderText{
+  text-align: center;
+  color: rgb(80, 41, 65);
+  font-size: 90px;
+  font-family: 'navFont';
+}
+.nameCompany{
+  font-family: 'navNameCompany';
+  font-size: 45px;
+  color: rgb(17, 19, 153);
+  font-weight: 600;
+
+
+}
+.slideUp{
+  animation-name: slideUp;
+
+  animation-duration: 3s; 
+
+  animation-timing-function: ease;    
+
+}
+
+@keyframes slideUp {
+  0% {
+      transform: translateY(100%);
+  }
+  50%{
+      transform: translateY(-8%);
+  }
+  65%{
+      transform: translateY(4%);
+  }
+  80%{
+      transform: translateY(-4%);
+  }
+  95%{
+      transform: translateY(2%);
+  }           
+  100% {
+      transform: translateY(0%);
+  }   
+}
+
+
+#headerNavBox,#menu{
+  display: flex;
+  flex-wrap: wrap;
+
+  
+
+}
+#menu{
+  padding-top: 35px;
+  
+  
+
+
+
+
+}
+.navBar a{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  margin-left: 60px;
+  padding: 10px;
+  font-family: 'navFont';
+  text-shadow: 1px 1px 2px rgb(80, 8, 8), 0 0 20px rgb(48, 7, 7);
+}
+.navBar a:hover{
+  border: 2px solid rgb(13, 39, 56);
+  border-radius: 30px;
+  transition: all .2s;
+  box-sizing: border-box;
+
+
+
+
+}
+.order{
+  margin-left: 240px;
+  
+}
+.orderIcon img{
+  height: 40px;
+  width: 40px;
+
+  
+}
+
