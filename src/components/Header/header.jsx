@@ -11,8 +11,6 @@ render(){
             <div>
                 <HeaderFixed/>
                 <Slider/>
-
-                
             </div>
         )
     }

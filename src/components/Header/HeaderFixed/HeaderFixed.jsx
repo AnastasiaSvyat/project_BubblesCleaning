@@ -9,15 +9,11 @@ class HeaderFixed extends React.Component{
         this.state ={
             elemToScroll:false
         }
-        
     }
     componentDidMount(){
        window.addEventListener('scroll',this.onScroll)
-
-        }
-       
-    onScroll = (event) =>{
-        
+    }
+    onScroll = () =>{
         if(window.pageYOffset > 50){
             this.setState({
                 elemToScroll:true
@@ -28,27 +24,16 @@ class HeaderFixed extends React.Component{
                 elemToScroll:false
             })
         }
-        console.log(window.pageYOffset);  
-            
-
-   
-}    
-
-
+    }    
 render(){
         return(
-
             <div>
-                
                 <div>
-        <div onScroll={this.onScroll}>
-          {this.state.elemToScroll ?  <div className='headerFixed'>
-            <Nav/>
-        </div>: ''}
-        </div>
-      </div>
-               
-                
+                    <div onScroll={this.onScroll}>
+                        {this.state.elemToScroll ?  <div className='headerFixed'>
+                            <Nav/></div>: ''}
+                    </div>
+                </div>
             </div>
         )
     }
