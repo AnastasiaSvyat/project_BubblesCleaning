@@ -1,5 +1,5 @@
 import React from 'react'
-import Nav from '../Header_img/Header_Nav/nav'
+import NavMenu from '../Header_img/Header_Nav/nav'
 
 
 
@@ -31,7 +31,7 @@ render(){
                 <div>
                     <div onScroll={this.onScroll}>
                         {this.state.elemToScroll ?  <div className='headerFixed'>
-                            <Nav/></div>: ''}
+                            <NavMenu/></div>: ''}
                     </div>
                 </div>
             </div>

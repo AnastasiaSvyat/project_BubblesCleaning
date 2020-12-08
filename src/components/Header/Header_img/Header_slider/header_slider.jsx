@@ -3,7 +3,7 @@ import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import Wave from '../../../../Assets/Wave/Wave';
 import BubbleCleaning from '../BubbleCleaning/BubbleCleaning';
-import Nav from '../Header_Nav/nav';
+import NavMenu from '../Header_Nav/nav';
 import BtnBook from './BtnBook';
 
  
@@ -19,7 +19,7 @@ const Slider = () => {
         <Fade>
           <div>
             <div className = 'slider' style={{'backgroundImage': `url(${slideImages[0]})`}}>
-              <Nav/>
+              <NavMenu/>
               <BubbleCleaning/>
               <div className='sliderText slideUp'>Let Us Do Your <br/> Dirty Work</div>
               <BtnBook/>
@@ -28,7 +28,7 @@ const Slider = () => {
           </div>
           <div>
             <div className = 'slider' style={{'backgroundImage': `url(${slideImages[1]})`}}>
-              <Nav/>
+              <NavMenu/>
               <BubbleCleaning/>
               <div className='sliderText slideUp'>Care For <br/> Your Home</div>
               <BtnBook/>
@@ -37,7 +37,7 @@ const Slider = () => {
           </div>
           <div>
             <div className = 'slider' style={{'backgroundImage': `url(${slideImages[2]})`}}>
-              <Nav/>
+              <NavMenu/>
               <BubbleCleaning/> 
               <div className='sliderText slideUp'>Your Experts In Carpet <br/> And Upholstery</div>
               <BtnBook/>

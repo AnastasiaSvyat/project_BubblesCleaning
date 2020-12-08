@@ -66,6 +66,10 @@ class HomeThirdBox extends React.Component{
                     </div>
                 })}
                 </div>
+                <div className = {classes.wave}>
+                <img src="https://static.tildacdn.com/tild3766-3264-4239-a233-613231343863/wave.png" alt=""/>
+
+                </div>
             </div>
         )
     }

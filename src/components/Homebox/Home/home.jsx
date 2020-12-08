@@ -1,5 +1,6 @@
 import React from 'react'
 import Arrow from '../../Arrow/Arrow'
+import Footer from '../../Footer/footer'
 import Header from '../../Header/header'
 import HomeSecondBox from './HomeSecondBox/HomeSecondBox'
 import HomeThirdBox from './HomeThirdBox/HomeThirdBox'
@@ -16,7 +17,9 @@ render(){
                <Header/>
                 <HomeSecondBox/>
                 <HomeThirdBox/>
+                <Footer/>
                 <Arrow/>
+                
             </div>
         )
     }
