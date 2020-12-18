@@ -1,0 +1,121 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.container_img img{
+    width: 300px;
+    height: 230px;
+    /* padding-left: 30px; */
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgb(32, 24, 32);
+    transition: 0.1s linear;
+}
+.container_img{
+    margin-top: 50px;
+    width: 320px;
+    height: 400px;
+    background-color: rgb(230, 211, 241);
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgb(58, 1, 46);
+}
+.container_img img:hover,.btn:hover{
+    transform: scale(1.03);
+}
+.container_img h2{
+font-family: 'navFont';
+text-align: center;
+color: rgb(57, 76, 243);
+margin-top: 10px;
+}
+.btn a {
+    text-decoration: none;
+    color: white;
+
+
+}
+.btn{
+    width: 230px;
+    height: 50px;
+    margin-left: 45px;
+    border-radius: 20px;
+    background-color: rgb(224, 67, 94);
+    margin-top: 25px;
+}
+
+@keyframes pulse {
+    0% { 
+      transform: scale(0.9); 
+      background-color:  rgba(231, 171, 243, 0.925); 
+    }
+    50% { 
+      transform: scale(1); 
+      background-color: rgba(185, 82, 177, 0.863);
+    }
+    100% { 
+      transform: scale(0.9);
+      background-color: rgba(230, 112, 200, 0.932); 
+    }
+    }
+.saleBox{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgb(255, 255, 255), rgba(215, 238, 253, 0.979) ,white);
+
+}
+.saleBox h2,.saleCoupon p{
+    text-align: center;
+    color: rgb(202, 44, 70);
+    font-family: 'NavFont';
+    margin-top: 45px;
+
+
+}
+@media screen and (min-width: 599px) {
+    .saleCoupon{
+        width: 450px;
+        height: 250px;
+        
+
+    }
+    .saleBox h2,.saleCoupon p{
+        font-size: 50px;
+
+    }
+    
+  }
+  @media screen and (max-width: 599px) {
+    .saleCoupon{
+        width: 70%;
+        height: 200px;
+        
+
+    }
+    .saleBox h2,.saleCoupon p{
+        font-size: 30px;
+
+    }
+
+  }
+
+.saleCoupon{
+    
+    border: 5px solid rgb(134, 15, 105);
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 30px;
+    animation: pulse 3s infinite;
+
+}
+.saleCoupon:hover{
+    animation: none;
+    background-color: rgb(98, 190, 163);
+}
+.saleCoupon p{
+    color: white;
+    font-family: 'NavFont';
+}

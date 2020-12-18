@@ -13,6 +13,21 @@
   outline: none; 
 
 }
+.pulse a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: 'navfont';
+  font-size: 25px;
+}
+@media screen and (width: 1024px) {
+    
+  .pulse{
+  margin-left: 360px;
+      
+
+  }
+
+}
 .pulse:hover {
   animation: none;
   background-color: rgb(36, 187, 162);

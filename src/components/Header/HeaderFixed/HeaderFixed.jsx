@@ -1,5 +1,7 @@
 import React from 'react'
 import NavMenu from '../Header_img/Header_Nav/nav'
+import Media from 'react-media'
+import NavMenuTel from '../Header_img/Header_Nav/NavMenuTel'
 
 
 
@@ -31,7 +33,9 @@ render(){
                 <div>
                     <div onScroll={this.onScroll}>
                         {this.state.elemToScroll ?  <div className='headerFixed'>
-                            <NavMenu/></div>: ''}
+                        <Media query={{ maxWidth: 599 }}>
+          {matches =>matches ? (<NavMenuTel/>) : (<NavMenu/>)}
+                        </Media></div>: ''}
                     </div>
                 </div>
             </div>

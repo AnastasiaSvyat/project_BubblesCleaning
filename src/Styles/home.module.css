@@ -13,38 +13,29 @@
     display: flex;
     flex-wrap: wrap;
 }
-.secondBox_right img{
-    width: 150px;
-    height: 150px;
-    margin-left: 280px;
-}
 .secondBox_left img{
-    margin-left: 100px;
+    width: 50%;
+    margin-left: 80px;
     margin-top: 50px;
 }
 .secondBox_right h2,.secondBox_right p{
     font-family: 'FontSecondBox';
-    color: rgb(5, 134, 128);
+    color: rgb(126, 43, 101);
     font-weight: bold;
     font-size: 35px;
-    margin-left: 250px;
-}
-.secondBox_right p{
-    color: rgb(55, 143, 146);
-    margin-left: 150px;
     text-align: center;
     margin-top: 20px;
+
+
+}
+
+.secondBox_right p{
+    color: rgb(55, 143, 146);
     font-size: 25px;
 }
-.secondBox_top img{
-    width: 100%;
-    height: 100px;
-    margin-top: 80px;
-}
+
 .containerThird{
     width: 100%;
-    height: 600px;
-    margin-top: 121px;
     background-color: #fff;
     background: linear-gradient( white,rgb(146, 219, 214),white);
 }
@@ -63,12 +54,11 @@
     color: rgb(16, 91, 97);
 }
 .step_container{
-    width: 1100px;
+    width: 100%;
     height: 300px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
 }
 .step_img img{
     width: 120px;
@@ -97,8 +87,35 @@
     color: rgb(211, 23, 54);
     font-size: 20px;
 }
-.wave img{
-    width: 100%;
-    height: 80px;
-    margin-top: 80px;
-}
+@media screen and (min-width: 599px) {
+    .secondBox_right h2,.secondBox_right p{
+    margin-left: 150px;
+
+    }
+    .step_container{
+        margin-left: 190px;
+
+    }
+  }
+  @media screen and (max-width: 599px) {
+    .containerThird{
+        margin-top: 120px;
+
+    }
+   
+  }
+  @media screen and (width: 1024px) {
+    .secondBox_right h2,.secondBox_right p{
+        margin-left: 550px;
+    
+        }
+    .containerThird{
+        margin-top: 170px;
+
+    }
+    .step_container{
+        margin-left: 80px;
+
+    }
+  
+  }

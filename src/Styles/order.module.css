@@ -1,0 +1,167 @@
+.nav{
+    border-radius: 50% 20% / 10% 40%;
+    background: linear-gradient(90deg, rgba(92,39,79,1) 0%, rgba(219,127,183,0.9794292717086834) 46%, rgba(103,22,98,1) 100%);
+    width: 100%;
+
+}
+.finilBox{
+   
+    height: 300px;
+position: absolute;
+border-radius: 20px;
+background-color: rgb(161, 211, 240);
+color: white;
+box-shadow: 0 0 10px black;
+}
+
+.container,.calendardate{
+    display: flex;
+    flex-wrap: wrap;
+}
+.calendar{
+    width: 100px;
+    height: 100px;
+}
+.container_left{
+    margin-top: 40px;
+}
+.f{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( white,rgb(146, 219, 214),white);
+    
+}
+@media screen and (min-width: 599px) {
+    .container_left{
+        margin-left: 200px;
+    }
+    .container_right{
+        margin-left: 300px;
+
+    }
+    .finilBox{
+        top: 200px;
+        left: 500px;
+        width: 30%;
+
+    }
+  }
+  @media screen and (width: 1024px) {
+    
+    .finilBox{
+        left: 250px;
+        width: 50%;
+        top: 300px;
+
+    }
+
+  }
+  @media screen and (max-width: 599px) {
+    .finilBox{
+        width: 70%;
+
+        top: 500px;
+        left: 50px;
+}
+    .container_left{
+        margin-left: 0px;
+    }
+    h1{
+        text-align: center;
+
+    }
+    
+
+    
+  }
+
+.container_left input, .calendardate{
+    width: 400px;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 4px solid rgb(173, 123, 223);
+
+}
+.calendardate img{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+
+}
+
+.container_left p{
+    font-size: 20px;
+    font-family: 'navfont';
+    color: rgb(99, 96, 99);
+
+}
+.calendardate{
+    margin-top: 20px;
+}
+.container_right{
+
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    text-align: center;
+
+
+}
+h1,.container_right h2,.container_right p{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'navFont';  
+    color: rgb(19, 93, 97);  
+    font-size: 40px;
+}
+.container_right h2,.container_right p{
+    font-size: 30px;
+    margin-top: 0;
+
+
+}
+.container_right p{
+    margin-top: 20px;
+    font-size: 40px;
+    
+}
+.container_right button{
+    width: 300px;
+    height: 60px;
+    background-color: rgb(163, 62, 245);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(29, 123, 177, 0.438);
+    margin-top: 60px;
+    color: white;
+    font-family: 'navfont';
+    border: none;
+    font-size: 25px;
+    animation: pulse 3s infinite;
+
+
+}
+@keyframes pulse {
+    0% { 
+      transform: scale(0.9); 
+      background-color:  rgba(231, 171, 243, 0.925); 
+    }
+    50% { 
+      transform: scale(1); 
+      background-color: rgba(185, 82, 177, 0.863);
+    }
+    100% { 
+      transform: scale(0.9);
+      background-color: rgba(230, 112, 200, 0.932); 
+    }
+    }
+    .promoBtn{
+        width: 50px;
+        height: 30px;
+        background-color: violet;
+        border-radius: 20%;
+        box-shadow: 0 0 10px rgb(189, 22, 153);
+        margin-left: 5px;
+    }

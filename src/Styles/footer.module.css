@@ -8,37 +8,49 @@
     
 }
 .container_text{
-    padding-top: 100px;
     font-family: 'navFont';
     font-size: 45px;
     color: rgb(26, 50, 116);
 }
+@media screen and (min-width: 599px) {
+    .container_text{
+    padding-top: 100px;
+
+    }
+  }
 .container_text p{
     font-size: 20px;
    
 }
+.container_submitNumber{
+    border: 1px solid #000; 
+    background-color: rgb(104, 11, 58);
+    width: 360px; 
+    height: 60px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 30px;
+
+
+}
 
 
 .inputNumber{
+  color: white;
+    background-color: rgb(104, 11, 58);
+
+    font-size: 23px;
     border: none; 
     outline: none; 
-    width: 360px; 
-    height: 60px;
-    background-color: rgb(104, 11, 58);
-    color: white;
-    border-radius: 30px;
-    font-size: 23px;
-    margin-top: 30px;
 }
 .btnNumber{
-    width: 80px; 
-    height: 40px; 
+    width: 90px; 
+    height: 44px; 
     background-color: rgb(255, 255, 255);
     outline: none; 
     border-radius: 30px;
-    position: absolute;
-    right: 530px;
-    top: 2264px;
+    border: 1px solid white;
+    margin-top: 5px;
 
 
 }
